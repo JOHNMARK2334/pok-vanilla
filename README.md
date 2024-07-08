@@ -32,7 +32,7 @@ To run this project, you need a modern web browser and an internet connection.
 1. **Clone the repository**:
 
     ```sh
-    git clone https://github.com/your-username/pokedex-app.git
+    https://github.com/JOHNMARK2334/pok-vanilla.git
     ```
 
 2. **Navigate to the project directory**:
