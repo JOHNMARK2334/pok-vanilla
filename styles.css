@@ -88,11 +88,11 @@ header h1 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #8090e2;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -103,7 +103,7 @@ header h1 {
 }
 
 .close {
-    color: #aaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -111,9 +111,10 @@ header h1 {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #f50505;
     text-decoration: none;
     cursor: pointer;
+    transform: scale(1.25);
 }
 
 /* Responsive adjustments */
