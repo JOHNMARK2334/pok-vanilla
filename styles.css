@@ -40,6 +40,16 @@ header h1 {
     border-radius: 10px;
 }
 
+#type-filter {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -100,10 +110,12 @@ header h1 {
     max-width: 600px;
     position: relative;
     border-radius: 5px;
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
 }
 
 .close {
-    color: #000000;
+    color: #0000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -115,6 +127,40 @@ header h1 {
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.25);
+}
+
+/* Pagination styles */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 10px;
+    margin: 0;
+    background-color: #051d38;
+    color: #fff;
+    border: 2px solid #FFFFFF 1rem;
+    cursor: pointer;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page-number {
+    padding: 10px;
+    margin: 0;
+    background-color: #051d38;
+    color: #fff;
+    border: 2px solid #FFFFFF 1rem;
+    cursor: pointer;
+}
+
+.page-number.active {
+    background-color: #3158cc;
 }
 
 /* Responsive adjustments */
@@ -129,7 +175,7 @@ header h1 {
         font-size: 2.5em;
     }
 
-    #search-bar {
+    #search-bar, #type-filter {
         margin-top: 0;
     }
 

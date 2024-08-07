@@ -11,8 +11,21 @@
             <header>
                 <h1>Pokedex</h1>
                 <input type="text" id="search-bar" placeholder="Search Pokémon by name or ID">
+                <select id="type-filter">
+                    <option value="">All Types</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="grass">Grass</option>
+                    <!-- Add other types as needed -->
+                </select>
             </header>
             <section id="pokemon-list" class="grid"></section>
+            <div id="pagination">
+                <button id="prev-button" disabled>Previous</button>
+                <div id="page-numbers"></div>
+                <button id="next-button">Next</button>
+            </div>
+            <div id="loading" style="display: none;">Loading...</div>
         </div>
 
         <!-- Modal for Pokémon details -->
